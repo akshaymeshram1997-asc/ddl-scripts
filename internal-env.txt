@@ -1,0 +1,2792 @@
+-- DROP SCHEMA dadb;
+
+CREATE SCHEMA dadb AUTHORIZATION postgres;
+
+-- DROP SEQUENCE dadb.customer_license_mst_id_seq;
+
+CREATE SEQUENCE dadb.customer_license_mst_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.customer_license_mst_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.customer_license_mst_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.customer_license_mst_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_agent_configs_id_seq;
+
+CREATE SEQUENCE dadb.da_agent_configs_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_agent_configs_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_configs_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_configs_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_agent_tools_id_seq;
+
+CREATE SEQUENCE dadb.da_agent_tools_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_agent_tools_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_tools_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_tools_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_agent_tools_id_seq1;
+
+CREATE SEQUENCE dadb.da_agent_tools_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_agent_tools_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_tools_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_tools_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.da_agent_user_defined_tools_id_seq;
+
+CREATE SEQUENCE dadb.da_agent_user_defined_tools_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_agent_user_defined_tools_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_user_defined_tools_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agent_user_defined_tools_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_agents_id_seq;
+
+CREATE SEQUENCE dadb.da_agents_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_agents_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agents_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_agents_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_analysis_type_mst_id_seq;
+
+CREATE SEQUENCE dadb.da_analysis_type_mst_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_analysis_type_mst_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_analysis_type_mst_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_analysis_type_mst_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_analytics_requests_id_seq;
+
+CREATE SEQUENCE dadb.da_analytics_requests_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_analytics_requests_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_analytics_requests_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_analytics_requests_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_analytics_responses_id_seq;
+
+CREATE SEQUENCE dadb.da_analytics_responses_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_analytics_responses_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_analytics_responses_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_analytics_responses_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_aws_bedrock_model_id_seq;
+
+CREATE SEQUENCE dadb.da_aws_bedrock_model_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_aws_bedrock_model_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_aws_bedrock_model_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_aws_bedrock_model_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_azure_api_version_ref_id_seq;
+
+CREATE SEQUENCE dadb.da_azure_api_version_ref_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_azure_api_version_ref_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_azure_api_version_ref_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_azure_api_version_ref_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_azure_openai_model_id_seq;
+
+CREATE SEQUENCE dadb.da_azure_openai_model_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_azure_openai_model_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_azure_openai_model_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_azure_openai_model_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_category_id_seq;
+
+CREATE SEQUENCE dadb.da_category_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_category_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_category_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_category_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_chatbot_id_seq;
+
+CREATE SEQUENCE dadb.da_chatbot_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_chatbot_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_chatbot_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_chatbot_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_chatbot_ux_id_seq;
+
+CREATE SEQUENCE dadb.da_chatbot_ux_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_chatbot_ux_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_chatbot_ux_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_chatbot_ux_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_code_conversion_usecases_id_seq;
+
+CREATE SEQUENCE dadb.da_code_conversion_usecases_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_code_conversion_usecases_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_code_conversion_usecases_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_code_conversion_usecases_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_component_analytics_id_seq;
+
+CREATE SEQUENCE dadb.da_component_analytics_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_component_analytics_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_component_analytics_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_component_analytics_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_component_id_seq;
+
+CREATE SEQUENCE dadb.da_component_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_component_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_component_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_component_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_configs_id_seq;
+
+CREATE SEQUENCE dadb.da_configs_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_configs_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_configs_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_configs_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_data_engineering_usecases_id_seq;
+
+CREATE SEQUENCE dadb.da_data_engineering_usecases_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_data_engineering_usecases_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_data_engineering_usecases_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_data_engineering_usecases_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_delivery_excellence_usecases_id_seq;
+
+CREATE SEQUENCE dadb.da_delivery_excellence_usecases_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_delivery_excellence_usecases_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_delivery_excellence_usecases_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_delivery_excellence_usecases_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_feedback_id_seq;
+
+CREATE SEQUENCE dadb.da_feedback_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_feedback_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_feedback_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_feedback_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_google_ai_model_id_seq;
+
+CREATE SEQUENCE dadb.da_google_ai_model_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_google_ai_model_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_google_ai_model_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_google_ai_model_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_groups_id_seq;
+
+CREATE SEQUENCE dadb.da_groups_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_groups_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_groups_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_groups_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_guardrail_mst_id_seq;
+
+CREATE SEQUENCE dadb.da_guardrail_mst_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_guardrail_mst_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_guardrail_mst_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_guardrail_mst_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_hierarchy_id_seq;
+
+CREATE SEQUENCE dadb.da_hierarchy_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_hierarchy_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_hierarchy_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_hierarchy_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_knowledgebase_collection_mst_id_seq;
+
+CREATE SEQUENCE dadb.da_knowledgebase_collection_mst_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_knowledgebase_collection_mst_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_knowledgebase_collection_mst_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_knowledgebase_collection_mst_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_knowledgebase_collection_transaction_id_seq;
+
+CREATE SEQUENCE dadb.da_knowledgebase_collection_transaction_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_knowledgebase_collection_transaction_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_knowledgebase_collection_transaction_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_knowledgebase_collection_transaction_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_labels_id_seq;
+
+CREATE SEQUENCE dadb.da_labels_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_labels_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_labels_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_labels_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_levels_id_seq;
+
+CREATE SEQUENCE dadb.da_levels_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_levels_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_levels_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_levels_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_license_id_seq;
+
+CREATE SEQUENCE dadb.da_license_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_license_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_license_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_license_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_model_id_seq;
+
+CREATE SEQUENCE dadb.da_model_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_model_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_model_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_model_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_opensource_model_id_seq;
+
+CREATE SEQUENCE dadb.da_opensource_model_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_opensource_model_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_opensource_model_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_opensource_model_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_opensource_model_id_seq1;
+
+CREATE SEQUENCE dadb.da_opensource_model_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_opensource_model_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_opensource_model_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_opensource_model_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.da_pipeline_configs_pipeline_config_id_seq;
+
+CREATE SEQUENCE dadb.da_pipeline_configs_pipeline_config_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_pipeline_configs_pipeline_config_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_pipeline_configs_pipeline_config_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_pipeline_configs_pipeline_config_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_pipeline_mst_id_seq;
+
+CREATE SEQUENCE dadb.da_pipeline_mst_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_pipeline_mst_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_pipeline_mst_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_pipeline_mst_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_pipeline_tools_values_id_seq;
+
+CREATE SEQUENCE dadb.da_pipeline_tools_values_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_pipeline_tools_values_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_pipeline_tools_values_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_pipeline_tools_values_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_plugins_usecases_id_seq;
+
+CREATE SEQUENCE dadb.da_plugins_usecases_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_plugins_usecases_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_plugins_usecases_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_plugins_usecases_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_prompt_category_category_id_seq;
+
+CREATE SEQUENCE dadb.da_prompt_category_category_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_prompt_category_category_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_category_category_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_category_category_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_prompt_domain_domain_id_seq;
+
+CREATE SEQUENCE dadb.da_prompt_domain_domain_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_prompt_domain_domain_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_domain_domain_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_domain_domain_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_prompt_example_id_seq;
+
+CREATE SEQUENCE dadb.da_prompt_example_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_prompt_example_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_example_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_example_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_prompt_new_id_seq;
+
+CREATE SEQUENCE dadb.da_prompt_new_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_prompt_new_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_new_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_new_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_prompt_prompt_id_seq;
+
+CREATE SEQUENCE dadb.da_prompt_prompt_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_prompt_prompt_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_prompt_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_prompt_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_prompt_templates_id_seq;
+
+CREATE SEQUENCE dadb.da_prompt_templates_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_prompt_templates_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_templates_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_prompt_templates_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_reference_data_id_seq;
+
+CREATE SEQUENCE dadb.da_reference_data_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_reference_data_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_reference_data_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_reference_data_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_security_credential_id_seq;
+
+CREATE SEQUENCE dadb.da_security_credential_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_security_credential_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_security_credential_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_security_credential_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_settings_settingid_seq;
+
+CREATE SEQUENCE dadb.da_settings_settingid_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_settings_settingid_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_settings_settingid_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_settings_settingid_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_theme_attributes_id_seq;
+
+CREATE SEQUENCE dadb.da_theme_attributes_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_theme_attributes_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_theme_attributes_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_theme_attributes_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_theme_attributes_id_seq1;
+
+CREATE SEQUENCE dadb.da_theme_attributes_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_theme_attributes_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_theme_attributes_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_theme_attributes_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.da_themes_id_seq;
+
+CREATE SEQUENCE dadb.da_themes_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_themes_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_themes_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_themes_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_themes_id_seq1;
+
+CREATE SEQUENCE dadb.da_themes_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_themes_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_themes_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_themes_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.da_tools_id_seq;
+
+CREATE SEQUENCE dadb.da_tools_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_tools_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_tools_id_seq1;
+
+CREATE SEQUENCE dadb.da_tools_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_tools_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.da_tools_parameters_id_seq;
+
+CREATE SEQUENCE dadb.da_tools_parameters_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_tools_parameters_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_parameters_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_parameters_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_tools_parameters_id_seq1;
+
+CREATE SEQUENCE dadb.da_tools_parameters_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_tools_parameters_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_parameters_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_tools_parameters_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.da_transactions_history_id_seq;
+
+CREATE SEQUENCE dadb.da_transactions_history_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_transactions_history_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_transactions_history_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_transactions_history_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_use_cases_id_seq;
+
+CREATE SEQUENCE dadb.da_use_cases_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_use_cases_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_use_cases_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_use_cases_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_user_defined_tools_id_seq;
+
+CREATE SEQUENCE dadb.da_user_defined_tools_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_user_defined_tools_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_user_defined_tools_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_user_defined_tools_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_visualization_usecases_id_seq;
+
+CREATE SEQUENCE dadb.da_visualization_usecases_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_visualization_usecases_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_visualization_usecases_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_visualization_usecases_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_workflow_execution_files_id_seq;
+
+CREATE SEQUENCE dadb.da_workflow_execution_files_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_workflow_execution_files_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_workflow_execution_files_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_workflow_execution_files_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.da_workflow_execution_history_id_seq;
+
+CREATE SEQUENCE dadb.da_workflow_execution_history_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.da_workflow_execution_history_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_workflow_execution_history_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.da_workflow_execution_history_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.jira_credential_seq;
+
+CREATE SEQUENCE dadb.jira_credential_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.jira_credential_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.jira_credential_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.jira_credential_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.message_id_seq;
+
+CREATE SEQUENCE dadb.message_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.message_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.message_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.message_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.page_actions_page_action_id_seq;
+
+CREATE SEQUENCE dadb.page_actions_page_action_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.page_actions_page_action_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.page_actions_page_action_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.page_actions_page_action_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.pipeline_tools_values_id_seq;
+
+CREATE SEQUENCE dadb.pipeline_tools_values_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.pipeline_tools_values_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.pipeline_tools_values_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.pipeline_tools_values_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.qe_track_usecase_req_id_seq;
+
+CREATE SEQUENCE dadb.qe_track_usecase_req_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.qe_track_usecase_req_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_track_usecase_req_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_track_usecase_req_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.qe_track_usecase_req_id_seq1;
+
+CREATE SEQUENCE dadb.qe_track_usecase_req_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.qe_track_usecase_req_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_track_usecase_req_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_track_usecase_req_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.qe_workflow_config_id_seq;
+
+CREATE SEQUENCE dadb.qe_workflow_config_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.qe_workflow_config_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_workflow_config_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_workflow_config_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.qe_workflow_config_id_seq1;
+
+CREATE SEQUENCE dadb.qe_workflow_config_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.qe_workflow_config_id_seq1 OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_workflow_config_id_seq1 TO postgres;
+GRANT ALL ON SEQUENCE dadb.qe_workflow_config_id_seq1 TO avaplus;
+
+-- DROP SEQUENCE dadb.role_page_action_mapping_id_seq;
+
+CREATE SEQUENCE dadb.role_page_action_mapping_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.role_page_action_mapping_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.role_page_action_mapping_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.role_page_action_mapping_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.roles_role_id_seq;
+
+CREATE SEQUENCE dadb.roles_role_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.roles_role_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.roles_role_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.roles_role_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.users_role_mapping_id_seq;
+
+CREATE SEQUENCE dadb.users_role_mapping_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.users_role_mapping_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.users_role_mapping_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.users_role_mapping_id_seq TO avaplus;
+
+-- DROP SEQUENCE dadb.users_user_id_seq;
+
+CREATE SEQUENCE dadb.users_user_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE dadb.users_user_id_seq OWNER TO postgres;
+GRANT ALL ON SEQUENCE dadb.users_user_id_seq TO postgres;
+GRANT ALL ON SEQUENCE dadb.users_user_id_seq TO avaplus;
+-- dadb.alm_config definition
+
+-- Drop table
+
+-- DROP TABLE dadb.alm_config;
+
+CREATE TABLE dadb.alm_config (
+	"domain" varchar(100) NOT NULL,
+	app_type varchar(100) NOT NULL,
+	"module" varchar(100) NOT NULL,
+	"type" varchar(100) NOT NULL,
+	project varchar NULL,
+	url varchar NULL,
+	user_id varchar NULL,
+	api_token varchar NULL,
+	product_owner varchar NULL,
+	CONSTRAINT alm_config_pkey PRIMARY KEY (domain, app_type, module, type)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.alm_config OWNER TO postgres;
+GRANT ALL ON TABLE dadb.alm_config TO postgres;
+GRANT ALL ON TABLE dadb.alm_config TO avaplus;
+
+
+-- dadb.customer_license_mst definition
+
+-- Drop table
+
+-- DROP TABLE dadb.customer_license_mst;
+
+CREATE TABLE dadb.customer_license_mst (
+	id serial4 NOT NULL,
+	customer_name varchar NOT NULL,
+	start_date varchar(10) NOT NULL,
+	end_date varchar(10) NOT NULL,
+	encrypted_key text NOT NULL,
+	issue_date varchar(10) NOT NULL,
+	CONSTRAINT customer_license_mst_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.customer_license_mst OWNER TO postgres;
+GRANT ALL ON TABLE dadb.customer_license_mst TO postgres;
+GRANT ALL ON TABLE dadb.customer_license_mst TO avaplus;
+
+
+-- dadb.da_agent_configs definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_agent_configs;
+
+CREATE TABLE dadb.da_agent_configs (
+	id serial4 NOT NULL,
+	agent_id int4 NULL,
+	temperature float8 NULL,
+	max_token int4 NULL,
+	top_p float8 NULL
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_agent_configs OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_agent_configs TO postgres;
+GRANT ALL ON TABLE dadb.da_agent_configs TO avaplus;
+
+
+-- dadb.da_agent_tools definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_agent_tools;
+
+CREATE TABLE dadb.da_agent_tools (
+	id serial4 NOT NULL,
+	agent_id int4 NULL,
+	tool_id int4 NULL,
+	CONSTRAINT agent_tools_id_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_agent_tools OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_agent_tools TO postgres;
+GRANT ALL ON TABLE dadb.da_agent_tools TO avaplus;
+
+
+-- dadb.da_agent_user_defined_tools definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_agent_user_defined_tools;
+
+CREATE TABLE dadb.da_agent_user_defined_tools (
+	id serial4 NOT NULL,
+	agent_id int4 NOT NULL,
+	user_defined_tool_id int4 NOT NULL,
+	CONSTRAINT agent_user_defined_tools_id_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_agent_user_defined_tools OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_agent_user_defined_tools TO postgres;
+GRANT ALL ON TABLE dadb.da_agent_user_defined_tools TO avaplus;
+
+
+-- dadb.da_agents definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_agents;
+
+CREATE TABLE dadb.da_agents (
+	id serial4 NOT NULL,
+	"role" text NULL,
+	goal text NULL,
+	backstory text NULL,
+	is_verbose bool NULL,
+	allow_delegation bool NULL,
+	description text NULL,
+	expected_output text NULL,
+	updated_at timestamp NULL,
+	"name" varchar(255) NULL,
+	model_ref int4 NULL,
+	max_iter int4 NULL,
+	max_rpm int4 NULL,
+	max_execution_time int4 NULL,
+	knowledge_base_ref varchar NULL,
+	level_id int4 NULL,
+	agent_details text NULL,
+	allow_code_execution bool DEFAULT false NULL,
+	is_safe_code_execution bool NULL,
+	user_signature text NULL,
+	knowledge_base_ids varchar(200) NULL,
+	CONSTRAINT da_agents_pkey PRIMARY KEY (id),
+	CONSTRAINT unique_agent_name UNIQUE (name)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_agents OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_agents TO postgres;
+GRANT ALL ON TABLE dadb.da_agents TO avaplus;
+
+
+-- dadb.da_analysis_type_mst definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_analysis_type_mst;
+
+CREATE TABLE dadb.da_analysis_type_mst (
+	id serial4 NOT NULL,
+	"type" varchar NOT NULL,
+	description varchar NOT NULL,
+	expected_output_json varchar NOT NULL,
+	interceptable bool DEFAULT false NULL,
+	pass_match_expression varchar NULL,
+	CONSTRAINT da_analysis_type_mst_pkey PRIMARY KEY (id),
+	CONSTRAINT da_analysis_type_mst_type_unique_key UNIQUE (type)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_analysis_type_mst OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_analysis_type_mst TO postgres;
+GRANT ALL ON TABLE dadb.da_analysis_type_mst TO avaplus;
+
+
+-- dadb.da_analytics_requests definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_analytics_requests;
+
+CREATE TABLE dadb.da_analytics_requests (
+	id serial4 NOT NULL,
+	use_case_code varchar NULL,
+	user_signature varchar NULL,
+	prompt varchar NULL,
+	temperature varchar NULL,
+	top_p varchar NULL,
+	presence_penalty varchar NULL,
+	frequency_penalty varchar NULL,
+	logit_bias varchar NULL,
+	model_name varchar NULL,
+	created_at timestamp NULL,
+	source_url varchar NULL,
+	user_agent varchar NULL,
+	consumer_address varchar NULL,
+	identifier varchar NULL,
+	lines_of_code int4 NULL,
+	access_key varchar NULL,
+	primary_programming_language varchar NULL,
+	input_prompt varchar NULL,
+	user_prefix varchar NULL,
+	template_name varchar NULL,
+	CONSTRAINT da_analytics_requests_pkey PRIMARY KEY (id)
+);
+CREATE INDEX idx_created_at ON dadb.da_analytics_requests USING btree (created_at);
+
+-- Permissions
+
+ALTER TABLE dadb.da_analytics_requests OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_analytics_requests TO postgres;
+GRANT ALL ON TABLE dadb.da_analytics_requests TO avaplus;
+
+
+-- dadb.da_analytics_responses definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_analytics_responses;
+
+CREATE TABLE dadb.da_analytics_responses (
+	id serial4 NOT NULL,
+	req_id int4 NULL,
+	response_text varchar NOT NULL,
+	response_index int4 NOT NULL,
+	useful varchar NULL,
+	identifier varchar NULL,
+	"comments" varchar(255) NULL,
+	response_time_ms int8 NULL,
+	CONSTRAINT da_analytics_responses_pkey PRIMARY KEY (id)
+);
+CREATE INDEX idx_da_analytics_responses_id ON dadb.da_analytics_responses USING btree (id);
+
+-- Permissions
+
+ALTER TABLE dadb.da_analytics_responses OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_analytics_responses TO postgres;
+GRANT ALL ON TABLE dadb.da_analytics_responses TO avaplus;
+
+
+-- dadb.da_aws_bedrock_model definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_aws_bedrock_model;
+
+CREATE TABLE dadb.da_aws_bedrock_model (
+	id serial4 NOT NULL,
+	model_ref int4 NOT NULL,
+	region varchar(255) NOT NULL,
+	access_key_encoded varchar(255) NOT NULL,
+	secret_key_encoded varchar(255) NOT NULL,
+	bedrock_model_id varchar(255) NULL,
+	CONSTRAINT da_aws_bedrock_model_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_aws_bedrock_model OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_aws_bedrock_model TO postgres;
+GRANT ALL ON TABLE dadb.da_aws_bedrock_model TO avaplus;
+
+
+-- dadb.da_azure_api_version_ref definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_azure_api_version_ref;
+
+CREATE TABLE dadb.da_azure_api_version_ref (
+	id serial4 NOT NULL,
+	"version" varchar(255) NULL,
+	CONSTRAINT da_azure_api_version_ref_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_azure_api_version_ref OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_azure_api_version_ref TO postgres;
+GRANT ALL ON TABLE dadb.da_azure_api_version_ref TO avaplus;
+
+
+-- dadb.da_azure_openai_model definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_azure_openai_model;
+
+CREATE TABLE dadb.da_azure_openai_model (
+	id serial4 NOT NULL,
+	llm_deployment_name varchar(255) NULL,
+	api_key_encoded varchar(255) NULL,
+	base_url varchar(255) NULL,
+	api_version varchar(255) NULL,
+	model_ref int4 NULL,
+	CONSTRAINT da_azure_openai_model_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_azure_openai_model OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_azure_openai_model TO postgres;
+GRANT ALL ON TABLE dadb.da_azure_openai_model TO avaplus;
+
+
+-- dadb.da_category definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_category;
+
+CREATE TABLE dadb.da_category (
+	id serial4 NOT NULL,
+	category_name varchar NOT NULL,
+	CONSTRAINT code_unique UNIQUE (category_name),
+	CONSTRAINT da_category_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_category OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_category TO postgres;
+GRANT ALL ON TABLE dadb.da_category TO avaplus;
+
+
+-- dadb.da_chat_sessions definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_chat_sessions;
+
+CREATE TABLE dadb.da_chat_sessions (
+	session_id uuid NOT NULL,
+	use_case varchar(255) NOT NULL,
+	first_user_content text NULL,
+	created_by varchar(255) NULL,
+	"mode" varchar(50) NULL,
+	created_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	CONSTRAINT da_chat_sessions_pkey PRIMARY KEY (session_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_chat_sessions OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_chat_sessions TO postgres;
+GRANT ALL ON TABLE dadb.da_chat_sessions TO avaplus;
+
+
+-- dadb.da_chatbot definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_chatbot;
+
+CREATE TABLE dadb.da_chatbot (
+	id serial4 NOT NULL,
+	usecase_id int4 NULL,
+	chatbot_name varchar NULL,
+	description varchar NULL,
+	da_chatbot_url varchar NULL,
+	CONSTRAINT da_chatbot_pkey PRIMARY KEY (id),
+	CONSTRAINT unique_chatbot_name UNIQUE (chatbot_name),
+	CONSTRAINT uq_chatbot_name UNIQUE (chatbot_name)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_chatbot OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_chatbot TO postgres;
+GRANT ALL ON TABLE dadb.da_chatbot TO avaplus;
+
+
+-- dadb.da_code_conversion_usecases definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_code_conversion_usecases;
+
+CREATE TABLE dadb.da_code_conversion_usecases (
+	id serial4 NOT NULL,
+	"type" varchar(50) NOT NULL,
+	source_language varchar(50) NULL,
+	destination_language varchar(50) NULL,
+	use_case varchar(50) NOT NULL,
+	label_name varchar(255) NULL,
+	use_case_identifier varchar(255) NULL,
+	CONSTRAINT code_conversion_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_code_conversion_usecases OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_code_conversion_usecases TO postgres;
+GRANT ALL ON TABLE dadb.da_code_conversion_usecases TO avaplus;
+
+
+-- dadb.da_component definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_component;
+
+CREATE TABLE dadb.da_component (
+	id serial4 NOT NULL,
+	"type" varchar NULL,
+	component_name varchar NULL,
+	description text NULL,
+	is_current bool NULL,
+	"version" varchar NULL,
+	created_at timestamp NULL,
+	storage_link varchar NULL,
+	component_type varchar NULL,
+	CONSTRAINT da_component_component_name_version_key UNIQUE (component_name, version),
+	CONSTRAINT da_component_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_component OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_component TO postgres;
+GRANT ALL ON TABLE dadb.da_component TO avaplus;
+
+
+-- dadb.da_component_analytics definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_component_analytics;
+
+CREATE TABLE dadb.da_component_analytics (
+	id serial4 NOT NULL,
+	user_email varchar NULL,
+	component_name varchar NULL,
+	"version" varchar NULL,
+	created_at timestamp NULL
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_component_analytics OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_component_analytics TO postgres;
+GRANT ALL ON TABLE dadb.da_component_analytics TO avaplus;
+
+
+-- dadb.da_data_engineering_usecases definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_data_engineering_usecases;
+
+CREATE TABLE dadb.da_data_engineering_usecases (
+	id serial4 NOT NULL,
+	use_case varchar(255) NULL,
+	use_case_identifier varchar(255) NULL
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_data_engineering_usecases OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_data_engineering_usecases TO postgres;
+GRANT ALL ON TABLE dadb.da_data_engineering_usecases TO avaplus;
+
+
+-- dadb.da_delivery_excellence_usecases definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_delivery_excellence_usecases;
+
+CREATE TABLE dadb.da_delivery_excellence_usecases (
+	id serial4 NOT NULL,
+	use_case varchar(255) NOT NULL,
+	use_case_identifier varchar(255) NULL,
+	CONSTRAINT da_delivery_excellence_usecases_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_delivery_excellence_usecases OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_delivery_excellence_usecases TO postgres;
+GRANT ALL ON TABLE dadb.da_delivery_excellence_usecases TO avaplus;
+
+
+-- dadb.da_feedback definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_feedback;
+
+CREATE TABLE dadb.da_feedback (
+	id serial4 NOT NULL,
+	reporter_email varchar(255) NULL,
+	responder_email varchar(255) NULL,
+	feedback_details text NULL,
+	summery text NULL,
+	email_flag bool DEFAULT false NULL,
+	file_data bytea NULL,
+	file_name varchar(255) NULL,
+	file_type varchar(255) NULL,
+	email_timestamp timestamp NULL,
+	feedback_rating int4 DEFAULT 0 NOT NULL,
+	CONSTRAINT da_feedback_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_feedback OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_feedback TO postgres;
+GRANT ALL ON TABLE dadb.da_feedback TO avaplus;
+
+
+-- dadb.da_google_ai_model definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_google_ai_model;
+
+CREATE TABLE dadb.da_google_ai_model (
+	id int4 DEFAULT nextval('dadb.da_azure_openai_model_id_seq'::regclass) NOT NULL,
+	model varchar(255) NULL,
+	gcp_project_id varchar(255) NULL,
+	gcp_location varchar(255) NULL,
+	model_ref int4 NULL,
+	vertex_ai_endpoint varchar(255) NULL,
+	CONSTRAINT da_google_geminiai_model_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_google_ai_model OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_google_ai_model TO postgres;
+GRANT ALL ON TABLE dadb.da_google_ai_model TO avaplus;
+
+
+-- dadb.da_groups definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_groups;
+
+CREATE TABLE dadb.da_groups (
+	id serial4 NOT NULL,
+	"name" varchar NOT NULL,
+	CONSTRAINT da_groups_pk PRIMARY KEY (id),
+	CONSTRAINT groups_name_unique UNIQUE (name)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_groups OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_groups TO postgres;
+GRANT ALL ON TABLE dadb.da_groups TO avaplus;
+
+
+-- dadb.da_guardrail_mst definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_guardrail_mst;
+
+CREATE TABLE dadb.da_guardrail_mst (
+	id serial4 NOT NULL,
+	"name" varchar NOT NULL,
+	"content" varchar(1000) NOT NULL,
+	description varchar(100) NULL,
+	config_key varchar NULL,
+	yaml_content varchar NULL,
+	chatbot bool NULL,
+	CONSTRAINT da_guardrail_mst_name_unique UNIQUE (name),
+	CONSTRAINT da_guardrail_mst_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_guardrail_mst OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_guardrail_mst TO postgres;
+GRANT ALL ON TABLE dadb.da_guardrail_mst TO avaplus;
+
+
+-- dadb.da_hierarchy definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_hierarchy;
+
+CREATE TABLE dadb.da_hierarchy (
+	id serial4 NOT NULL,
+	"name" varchar NOT NULL,
+	CONSTRAINT da_hierarchy_pk PRIMARY KEY (id),
+	CONSTRAINT name_unique UNIQUE (name)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_hierarchy OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_hierarchy TO postgres;
+GRANT ALL ON TABLE dadb.da_hierarchy TO avaplus;
+
+
+-- dadb.da_knowledgebase_collection_mst definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_knowledgebase_collection_mst;
+
+CREATE TABLE dadb.da_knowledgebase_collection_mst (
+	id serial4 NOT NULL,
+	collection_name varchar NOT NULL,
+	description text NULL,
+	split_size varchar NULL,
+	model_ref int4 NULL,
+	vector_db varchar NULL,
+	created_date timestamp NULL,
+	created_by varchar NULL,
+	isactive bool NULL,
+	parent_split_size varchar(50) NULL,
+	"type" varchar(50) NULL,
+	CONSTRAINT da_knowledgebase_collection_mst_pkey PRIMARY KEY (id),
+	CONSTRAINT da_knowledgebase_collection_mst_unique_key UNIQUE (collection_name)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_knowledgebase_collection_mst OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_knowledgebase_collection_mst TO postgres;
+GRANT ALL ON TABLE dadb.da_knowledgebase_collection_mst TO avaplus;
+
+
+-- dadb.da_labels definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_labels;
+
+CREATE TABLE dadb.da_labels (
+	id serial4 NOT NULL,
+	label_code varchar(255) NOT NULL,
+	label_category_id int4 NOT NULL,
+	label_name varchar(255) NOT NULL,
+	label_info text NULL,
+	label_type varchar NULL,
+	label_values text NULL,
+	CONSTRAINT da_labels_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_labels OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_labels TO postgres;
+GRANT ALL ON TABLE dadb.da_labels TO avaplus;
+
+
+-- dadb.da_license definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_license;
+
+CREATE TABLE dadb.da_license (
+	id serial4 NOT NULL,
+	customer_name varchar NOT NULL,
+	start_date varchar(10) NOT NULL,
+	end_date varchar(10) NOT NULL,
+	encrypted_key text NOT NULL,
+	issue_date varchar(10) NULL,
+	CONSTRAINT da_license_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_license OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_license TO postgres;
+GRANT ALL ON TABLE dadb.da_license TO avaplus;
+
+
+-- dadb.da_lov_master definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_lov_master;
+
+CREATE TABLE dadb.da_lov_master (
+	use_case_id int4 NOT NULL,
+	identifier varchar NOT NULL,
+	value varchar NOT NULL
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_lov_master OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_lov_master TO postgres;
+GRANT ALL ON TABLE dadb.da_lov_master TO avaplus;
+
+
+-- dadb.da_model definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_model;
+
+CREATE TABLE dadb.da_model (
+	id serial4 NOT NULL,
+	model_deployment_name varchar(255) NOT NULL,
+	model varchar(255) NOT NULL,
+	model_type varchar(255) NOT NULL,
+	model_description text NULL,
+	ai_engine varchar(255) NOT NULL,
+	updated_date timestamp NULL,
+	CONSTRAINT da_model_model_deployment_name_key UNIQUE (model_deployment_name),
+	CONSTRAINT da_model_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_model OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_model TO postgres;
+GRANT ALL ON TABLE dadb.da_model TO avaplus;
+
+
+-- dadb.da_page_actions definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_page_actions;
+
+CREATE TABLE dadb.da_page_actions (
+	page_action_id int4 DEFAULT nextval('dadb.page_actions_page_action_id_seq'::regclass) NOT NULL,
+	page_action_name varchar(255) NOT NULL,
+	page_action_desc varchar(255) NULL,
+	created_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	updated_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	updated_by varchar(255) NULL,
+	CONSTRAINT da_page_actions_pkey PRIMARY KEY (page_action_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_page_actions OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_page_actions TO postgres;
+GRANT ALL ON TABLE dadb.da_page_actions TO avaplus;
+
+
+-- dadb.da_pipeline_configs definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_pipeline_configs;
+
+CREATE TABLE dadb.da_pipeline_configs (
+	id int4 DEFAULT nextval('dadb.da_pipeline_configs_pipeline_config_id_seq'::regclass) NOT NULL,
+	max_token int4 NULL,
+	top_p float8 NULL,
+	temperature float8 NULL
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_pipeline_configs OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_configs TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_configs TO avaplus;
+
+
+-- dadb.da_plugins_usecases definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_plugins_usecases;
+
+CREATE TABLE dadb.da_plugins_usecases (
+	id serial4 NOT NULL,
+	use_case_name varchar(255) NOT NULL,
+	CONSTRAINT da_plugins_usecases_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_plugins_usecases OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_plugins_usecases TO postgres;
+GRANT ALL ON TABLE dadb.da_plugins_usecases TO avaplus;
+
+
+-- dadb.da_prompt definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_prompt;
+
+CREATE TABLE dadb.da_prompt (
+	prompt_id serial4 NOT NULL,
+	prompt text NOT NULL,
+	prompt_desc text NOT NULL,
+	template_name varchar(200) NOT NULL,
+	category_id int4 NOT NULL,
+	CONSTRAINT da_prompt_pkey PRIMARY KEY (prompt_id),
+	CONSTRAINT da_prompt_template_name_unique_key UNIQUE (template_name)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_prompt OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt TO avaplus;
+
+
+-- dadb.da_prompt_category definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_prompt_category;
+
+CREATE TABLE dadb.da_prompt_category (
+	category_id serial4 NOT NULL,
+	domain_id int4 NOT NULL,
+	"name" varchar(255) NOT NULL,
+	CONSTRAINT da_prompt_category_pkey PRIMARY KEY (category_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_prompt_category OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_category TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_category TO avaplus;
+
+
+-- dadb.da_prompt_domain definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_prompt_domain;
+
+CREATE TABLE dadb.da_prompt_domain (
+	domain_id serial4 NOT NULL,
+	"name" varchar(255) NOT NULL,
+	CONSTRAINT da_prompt_domain_name_unique_key UNIQUE (name),
+	CONSTRAINT da_prompt_domain_pkey PRIMARY KEY (domain_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_prompt_domain OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_domain TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_domain TO avaplus;
+
+
+-- dadb.da_prompt_example definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_prompt_example;
+
+CREATE TABLE dadb.da_prompt_example (
+	id serial4 NOT NULL,
+	"input" text NULL,
+	"output" text NULL,
+	prompt_id int4 NULL,
+	CONSTRAINT da_prompt_example_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_prompt_example OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_example TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_example TO avaplus;
+
+
+-- dadb.da_reference_data definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_reference_data;
+
+CREATE TABLE dadb.da_reference_data (
+	id serial4 NOT NULL,
+	ref_key varchar(255) NULL,
+	value text NULL,
+	CONSTRAINT da_model_name_ref_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_reference_data OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_reference_data TO postgres;
+GRANT ALL ON TABLE dadb.da_reference_data TO avaplus;
+
+
+-- dadb.da_roles definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_roles;
+
+CREATE TABLE dadb.da_roles (
+	role_id int4 DEFAULT nextval('dadb.roles_role_id_seq'::regclass) NOT NULL,
+	role_name varchar(255) NOT NULL,
+	role_desc varchar(255) NULL,
+	created_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	updated_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	updated_by varchar(255) NULL,
+	CONSTRAINT da_roles_pkey PRIMARY KEY (role_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_roles OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_roles TO postgres;
+GRANT ALL ON TABLE dadb.da_roles TO avaplus;
+
+
+-- dadb.da_security_credential definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_security_credential;
+
+CREATE TABLE dadb.da_security_credential (
+	id serial4 NOT NULL,
+	user_name varchar NOT NULL,
+	email varchar NOT NULL,
+	expires_at timestamp NULL,
+	created_at timestamp NULL,
+	created_by varchar NULL,
+	"token" varchar NULL,
+	CONSTRAINT da_security_credential_pkey PRIMARY KEY (id),
+	CONSTRAINT unique_email UNIQUE (email)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_security_credential OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_security_credential TO postgres;
+GRANT ALL ON TABLE dadb.da_security_credential TO avaplus;
+
+
+-- dadb.da_settings definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_settings;
+
+CREATE TABLE dadb.da_settings (
+	settingid serial4 NOT NULL,
+	setting_key varchar NOT NULL,
+	setting_value text NULL,
+	setting_type varchar NULL,
+	possible_values text NULL,
+	setting_label varchar NULL,
+	setting_info text NULL,
+	CONSTRAINT da_settings_pkey PRIMARY KEY (settingid)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_settings OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_settings TO postgres;
+GRANT ALL ON TABLE dadb.da_settings TO avaplus;
+
+
+-- dadb.da_theme_attributes definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_theme_attributes;
+
+CREATE TABLE dadb.da_theme_attributes (
+	id serial4 NOT NULL,
+	theme_id int4 NULL,
+	"key" varchar(255) NOT NULL,
+	value text NOT NULL,
+	CONSTRAINT da_theme_attributes_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_theme_attributes OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_theme_attributes TO postgres;
+GRANT ALL ON TABLE dadb.da_theme_attributes TO avaplus;
+
+
+-- dadb.da_themes definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_themes;
+
+CREATE TABLE dadb.da_themes (
+	id serial4 NOT NULL,
+	"name" varchar(255) NOT NULL,
+	description text NULL,
+	CONSTRAINT da_themes_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_themes OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_themes TO postgres;
+GRANT ALL ON TABLE dadb.da_themes TO avaplus;
+
+
+-- dadb.da_tools definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_tools;
+
+CREATE TABLE dadb.da_tools (
+	id serial4 NOT NULL,
+	tool_name text NULL,
+	CONSTRAINT tool_id_pkey PRIMARY KEY (id),
+	CONSTRAINT unique_tool_name UNIQUE (tool_name)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_tools OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_tools TO postgres;
+GRANT ALL ON TABLE dadb.da_tools TO avaplus;
+
+
+-- dadb.da_user_defined_tools definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_user_defined_tools;
+
+CREATE TABLE dadb.da_user_defined_tools (
+	id serial4 NOT NULL,
+	tool_name varchar(255) NOT NULL,
+	tool_class_name varchar(255) NOT NULL,
+	tool_class_def text NOT NULL,
+	tool_image varchar NULL,
+	tool_description varchar(255) NULL,
+	create_timestamp timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	created_by varchar(255) NOT NULL,
+	is_approved bool DEFAULT false NULL,
+	approved_by varchar(255) NULL,
+	approval_timestamp timestamp NULL,
+	updated_by varchar(255) NULL,
+	update_timestamp timestamp NULL,
+	CONSTRAINT da_user_defined_tools_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_user_defined_tools OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_user_defined_tools TO postgres;
+GRANT ALL ON TABLE dadb.da_user_defined_tools TO avaplus;
+
+
+-- dadb.da_users definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_users;
+
+CREATE TABLE dadb.da_users (
+	user_id int4 DEFAULT nextval('dadb.users_user_id_seq'::regclass) NOT NULL,
+	user_email varchar(255) NOT NULL,
+	user_name varchar(255) NOT NULL,
+	created_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	updated_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	updated_by varchar(255) NULL,
+	CONSTRAINT da_users_pkey PRIMARY KEY (user_id),
+	CONSTRAINT da_users_user_email_key UNIQUE (user_email)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_users OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_users TO postgres;
+GRANT ALL ON TABLE dadb.da_users TO avaplus;
+
+
+-- dadb.da_workflow_execution_history definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_workflow_execution_history;
+
+CREATE TABLE dadb.da_workflow_execution_history (
+	id serial4 NOT NULL,
+	pipelineid int4 NOT NULL,
+	executionid varchar(36) NOT NULL,
+	property_name varchar(255) NOT NULL,
+	property_value text NULL,
+	updated_at timestamp DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_workflow_execution_history OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_workflow_execution_history TO postgres;
+GRANT ALL ON TABLE dadb.da_workflow_execution_history TO avaplus;
+
+
+-- dadb.jira_credential definition
+
+-- Drop table
+
+-- DROP TABLE dadb.jira_credential;
+
+CREATE TABLE dadb.jira_credential (
+	id int4 DEFAULT nextval('dadb.jira_credential_seq'::regclass) NOT NULL,
+	jira_user varchar NOT NULL,
+	jira_key varchar NOT NULL,
+	jira_user_url varchar NOT NULL,
+	CONSTRAINT unique_jira_user UNIQUE (jira_user),
+	CONSTRAINT unique_jira_user_url UNIQUE (jira_user, jira_user_url)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.jira_credential OWNER TO postgres;
+GRANT ALL ON TABLE dadb.jira_credential TO postgres;
+GRANT ALL ON TABLE dadb.jira_credential TO avaplus;
+
+
+-- dadb.message definition
+
+-- Drop table
+
+-- DROP TABLE dadb.message;
+
+CREATE TABLE dadb.message (
+	id serial4 NOT NULL,
+	message_text varchar(255) NOT NULL,
+	CONSTRAINT message_pkey PRIMARY KEY (id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.message OWNER TO postgres;
+GRANT ALL ON TABLE dadb.message TO postgres;
+GRANT ALL ON TABLE dadb.message TO avaplus;
+
+
+-- dadb.qe_track_usecase definition
+
+-- Drop table
+
+-- DROP TABLE dadb.qe_track_usecase;
+
+CREATE TABLE dadb.qe_track_usecase (
+	req_id serial4 NOT NULL,
+	user_name varchar(255) NULL,
+	project varchar(255) NULL,
+	epic_id varchar(255) NULL,
+	story_id varchar(255) NULL,
+	process_running bool NULL,
+	code int4 NULL,
+	"timestamp" timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	CONSTRAINT qe_track_usecase_pkey PRIMARY KEY (req_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.qe_track_usecase OWNER TO postgres;
+GRANT ALL ON TABLE dadb.qe_track_usecase TO postgres;
+GRANT ALL ON TABLE dadb.qe_track_usecase TO avaplus;
+
+
+-- dadb.qe_workflow_config definition
+
+-- Drop table
+
+-- DROP TABLE dadb.qe_workflow_config;
+
+CREATE TABLE dadb.qe_workflow_config (
+	id serial4 NOT NULL,
+	project varchar(255) NOT NULL,
+	epic_id varchar(255) NOT NULL,
+	user_name varchar(255) NOT NULL,
+	workflow_id varchar(255) NOT NULL,
+	CONSTRAINT qe_workflow_config_pkey PRIMARY KEY (project, epic_id, user_name),
+	CONSTRAINT unique_qe_workflow_config UNIQUE (project, epic_id, user_name, workflow_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.qe_workflow_config OWNER TO postgres;
+GRANT ALL ON TABLE dadb.qe_workflow_config TO postgres;
+GRANT ALL ON TABLE dadb.qe_workflow_config TO avaplus;
+
+
+-- dadb.da_chatbot_ux definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_chatbot_ux;
+
+CREATE TABLE dadb.da_chatbot_ux (
+	id serial4 NOT NULL,
+	chatbot_id int4 NULL,
+	logo varchar NULL,
+	theme varchar NULL,
+	no_chat_history int4 NULL,
+	personalized_message varchar NULL,
+	system_message varchar NULL,
+	CONSTRAINT da_chatbot_ux_chatbotid_key UNIQUE (chatbot_id),
+	CONSTRAINT da_chatbot_ux_pkey PRIMARY KEY (id),
+	CONSTRAINT da_chatbot_ux_chatbotid_fkey FOREIGN KEY (chatbot_id) REFERENCES dadb.da_chatbot(id) ON DELETE CASCADE
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_chatbot_ux OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_chatbot_ux TO postgres;
+GRANT ALL ON TABLE dadb.da_chatbot_ux TO avaplus;
+
+
+-- dadb.da_knowledgebase_collection_transaction definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_knowledgebase_collection_transaction;
+
+CREATE TABLE dadb.da_knowledgebase_collection_transaction (
+	id serial4 NOT NULL,
+	collection_id int4 NULL,
+	file_name varchar NULL,
+	file_path text NULL,
+	file_size_bytes int8 NULL,
+	upload_date timestamp NULL,
+	uploaded_by varchar NULL,
+	isactive bool NULL,
+	"source" text NULL,
+	CONSTRAINT da_knowledgebase_collection_transaction_collection_id_fkey FOREIGN KEY (collection_id) REFERENCES dadb.da_knowledgebase_collection_mst(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_knowledgebase_collection_transaction OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_knowledgebase_collection_transaction TO postgres;
+GRANT ALL ON TABLE dadb.da_knowledgebase_collection_transaction TO avaplus;
+
+
+-- dadb.da_levels definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_levels;
+
+CREATE TABLE dadb.da_levels (
+	id serial4 NOT NULL,
+	group_id int4 NOT NULL,
+	hierarchy_id int4 NOT NULL,
+	parent_lvl_id int4 NULL,
+	level_num int4 NOT NULL,
+	CONSTRAINT da_levels_pk PRIMARY KEY (id),
+	CONSTRAINT fk_groups FOREIGN KEY (group_id) REFERENCES dadb.da_groups(id),
+	CONSTRAINT fk_hierarchy FOREIGN KEY (hierarchy_id) REFERENCES dadb.da_hierarchy(id),
+	CONSTRAINT fk_self_1 FOREIGN KEY (parent_lvl_id) REFERENCES dadb.da_levels(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_levels OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_levels TO postgres;
+GRANT ALL ON TABLE dadb.da_levels TO avaplus;
+
+
+-- dadb.da_opensource_model definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_opensource_model;
+
+CREATE TABLE dadb.da_opensource_model (
+	id serial4 NOT NULL,
+	service_url text NULL,
+	model_ref int4 NULL,
+	api_key_encoded text NULL,
+	header_name text NULL,
+	CONSTRAINT da_opensource_model_pkey PRIMARY KEY (id),
+	CONSTRAINT da_opensource_model_model_ref_fkey FOREIGN KEY (model_ref) REFERENCES dadb.da_model(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_opensource_model OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_opensource_model TO postgres;
+GRANT ALL ON TABLE dadb.da_opensource_model TO avaplus;
+
+
+-- dadb.da_pipeline_mst definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_pipeline_mst;
+
+CREATE TABLE dadb.da_pipeline_mst (
+	id serial4 NOT NULL,
+	"name" varchar(255) NULL,
+	description text NULL,
+	created_at timestamp NULL,
+	pipeline_config_id int4 NULL,
+	model_ref int4 NULL,
+	enable_agentic_memory bool NULL,
+	master_embedding int4 NULL,
+	user_signature varchar NULL,
+	level_id int4 NULL,
+	CONSTRAINT da_pipeline_mst_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_model_ref FOREIGN KEY (model_ref) REFERENCES dadb.da_model(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_pipeline_mst OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_mst TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_mst TO avaplus;
+
+
+-- dadb.da_pipeline_tools_values definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_pipeline_tools_values;
+
+CREATE TABLE dadb.da_pipeline_tools_values (
+	id serial4 NOT NULL,
+	pipeline_id int4 NULL,
+	agent_tool_id int4 NULL,
+	tools_parameter_id int4 NULL,
+	value text NULL,
+	CONSTRAINT fk_pipeline_id FOREIGN KEY (pipeline_id) REFERENCES dadb.da_pipeline_mst(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_pipeline_tools_values OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_tools_values TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_tools_values TO avaplus;
+
+
+-- dadb.da_prompt_new definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_prompt_new;
+
+CREATE TABLE dadb.da_prompt_new (
+	id serial4 NOT NULL,
+	"name" varchar(255) NULL,
+	"type" varchar(50) NULL,
+	"role" varchar(255) NULL,
+	goal text NULL,
+	backstory text NULL,
+	description text NULL,
+	expected_output text NULL,
+	category_id int4 NULL,
+	prompt text NULL,
+	updated_at timestamp NULL,
+	instructions text NULL,
+	additional_considiration text NULL,
+	intermediate_steps text NULL,
+	description_consolidated text NULL,
+	expected_output_consolidated text NULL,
+	CONSTRAINT da_prompt_new_category_id_fkey FOREIGN KEY (category_id) REFERENCES dadb.da_prompt_category(category_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_prompt_new OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_new TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_new TO avaplus;
+
+
+-- dadb.da_prompt_templates definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_prompt_templates;
+
+CREATE TABLE dadb.da_prompt_templates (
+	id bigserial NOT NULL,
+	use_case_id int4 NOT NULL,
+	level_id int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	creator_identifier varchar NULL,
+	modified_at timestamp NULL,
+	modifier_identifier varchar NULL,
+	is_active varchar NULL,
+	selectors varchar NULL,
+	is_default varchar NULL,
+	template_name varchar NULL,
+	identifier varchar NULL,
+	"template" text NULL,
+	CONSTRAINT prompt_comp_unique_1 UNIQUE (selectors, use_case_id, level_id),
+	CONSTRAINT fk_prompt_level FOREIGN KEY (level_id) REFERENCES dadb.da_levels(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_prompt_templates OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_templates TO postgres;
+GRANT ALL ON TABLE dadb.da_prompt_templates TO avaplus;
+
+
+-- dadb.da_role_page_action_mapping definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_role_page_action_mapping;
+
+CREATE TABLE dadb.da_role_page_action_mapping (
+	id int4 DEFAULT nextval('dadb.role_page_action_mapping_id_seq'::regclass) NOT NULL,
+	role_id int4 NULL,
+	page_action_id int4 NULL,
+	CONSTRAINT da_role_page_action_mapping_pkey PRIMARY KEY (id),
+	CONSTRAINT role_page_actions_unique UNIQUE (role_id, page_action_id),
+	CONSTRAINT da_role_page_action_mapping_page_action_id_fkey FOREIGN KEY (page_action_id) REFERENCES dadb.da_page_actions(page_action_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_role_page_action_mapping OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_role_page_action_mapping TO postgres;
+GRANT ALL ON TABLE dadb.da_role_page_action_mapping TO avaplus;
+
+
+-- dadb.da_tools_parameters definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_tools_parameters;
+
+CREATE TABLE dadb.da_tools_parameters (
+	id serial4 NOT NULL,
+	tool_id int4 NOT NULL,
+	parameter_name text NULL,
+	parameter_type text NULL,
+	CONSTRAINT da_tools_parameters_id_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_tool_id FOREIGN KEY (tool_id) REFERENCES dadb.da_tools(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_tools_parameters OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_tools_parameters TO postgres;
+GRANT ALL ON TABLE dadb.da_tools_parameters TO avaplus;
+
+
+-- dadb.da_transactions_history definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_transactions_history;
+
+CREATE TABLE dadb.da_transactions_history (
+	id serial4 NOT NULL,
+	usersignature varchar NULL,
+	use_case varchar NULL,
+	"input" text NULL,
+	"output" text NULL,
+	date_inserted timestamp NULL,
+	use_case_identifier varchar(255) NULL,
+	session_id uuid NULL,
+	CONSTRAINT fk_session_id FOREIGN KEY (session_id) REFERENCES dadb.da_chat_sessions(session_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_transactions_history OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_transactions_history TO postgres;
+GRANT ALL ON TABLE dadb.da_transactions_history TO avaplus;
+
+
+-- dadb.da_use_cases definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_use_cases;
+
+CREATE TABLE dadb.da_use_cases (
+	id bigserial NOT NULL,
+	level_id int4 NULL,
+	code varchar NOT NULL,
+	description varchar NULL,
+	created_at timestamp NOT NULL,
+	creator_identifier varchar NULL,
+	"name" varchar NULL,
+	use_case_identifer varchar(255) NULL,
+	"role" varchar NULL,
+	goal varchar NULL,
+	expected_output varchar NULL,
+	backstory varchar NULL,
+	use_case_details text NULL,
+	user_signature varchar NULL,
+	CONSTRAINT pk_da_use_cases PRIMARY KEY (id),
+	CONSTRAINT use_case_identifier_unique_key UNIQUE (use_case_identifer),
+	CONSTRAINT fk_usecase_level FOREIGN KEY (level_id) REFERENCES dadb.da_levels(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_use_cases OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_use_cases TO postgres;
+GRANT ALL ON TABLE dadb.da_use_cases TO avaplus;
+
+
+-- dadb.da_users_role_mapping definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_users_role_mapping;
+
+CREATE TABLE dadb.da_users_role_mapping (
+	id int4 DEFAULT nextval('dadb.users_role_mapping_id_seq'::regclass) NOT NULL,
+	user_id int4 NULL,
+	role_id int4 NULL,
+	CONSTRAINT da_users_role_mapping_pkey PRIMARY KEY (id),
+	CONSTRAINT user_roles_unique UNIQUE (user_id, role_id),
+	CONSTRAINT da_users_role_mapping_role_id_fkey FOREIGN KEY (role_id) REFERENCES dadb.da_roles(role_id),
+	CONSTRAINT da_users_role_mapping_user_id_fkey FOREIGN KEY (user_id) REFERENCES dadb.da_users(user_id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_users_role_mapping OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_users_role_mapping TO postgres;
+GRANT ALL ON TABLE dadb.da_users_role_mapping TO avaplus;
+
+
+-- dadb.da_visualization_usecases definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_visualization_usecases;
+
+CREATE TABLE dadb.da_visualization_usecases (
+	id serial4 NOT NULL,
+	use_case varchar NULL,
+	use_case_identifier varchar(255) NULL,
+	CONSTRAINT da_visualization_usecases_pkey PRIMARY KEY (id),
+	CONSTRAINT da_visualization_usecases_usecases_use_case_identifer_fkey FOREIGN KEY (use_case_identifier) REFERENCES dadb.da_use_cases(use_case_identifer)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_visualization_usecases OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_visualization_usecases TO postgres;
+GRANT ALL ON TABLE dadb.da_visualization_usecases TO avaplus;
+
+
+-- dadb.da_workflow_execution_files definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_workflow_execution_files;
+
+CREATE TABLE dadb.da_workflow_execution_files (
+	id serial4 NOT NULL,
+	pipelineid int4 NOT NULL,
+	executionid varchar(36) NOT NULL,
+	user_signature varchar(255) NOT NULL,
+	filename varchar(255) NOT NULL,
+	file_content bytea NOT NULL,
+	updated_at timestamp DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	CONSTRAINT da_workflow_execution_files_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_pipeline FOREIGN KEY (pipelineid) REFERENCES dadb.da_pipeline_mst(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_workflow_execution_files OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_workflow_execution_files TO postgres;
+GRANT ALL ON TABLE dadb.da_workflow_execution_files TO avaplus;
+
+
+-- dadb.da_configs definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_configs;
+
+CREATE TABLE dadb.da_configs (
+	id serial4 NOT NULL,
+	use_case_id int4 NOT NULL,
+	config_key varchar NOT NULL,
+	config_val varchar NULL,
+	category_id int4 NULL,
+	CONSTRAINT da_configs_pk PRIMARY KEY (id),
+	CONSTRAINT fk_category_id FOREIGN KEY (category_id) REFERENCES dadb.da_category(id),
+	CONSTRAINT fk_use_case FOREIGN KEY (use_case_id) REFERENCES dadb.da_use_cases(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_configs OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_configs TO postgres;
+GRANT ALL ON TABLE dadb.da_configs TO avaplus;
+
+
+-- dadb.da_pipeline_agents definition
+
+-- Drop table
+
+-- DROP TABLE dadb.da_pipeline_agents;
+
+CREATE TABLE dadb.da_pipeline_agents (
+	pipeline_id int4 NULL,
+	serial int4 NULL,
+	agent_id int4 NULL,
+	CONSTRAINT da_pipeline_details_agentid_fkey FOREIGN KEY (agent_id) REFERENCES dadb.da_agents(id),
+	CONSTRAINT da_pipeline_details_pipelineid_fkey FOREIGN KEY (pipeline_id) REFERENCES dadb.da_pipeline_mst(id)
+);
+
+-- Permissions
+
+ALTER TABLE dadb.da_pipeline_agents OWNER TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_agents TO postgres;
+GRANT ALL ON TABLE dadb.da_pipeline_agents TO avaplus;
+
+
+
+
+-- Permissions
+
+GRANT ALL ON SCHEMA dadb TO postgres;
+GRANT ALL ON SCHEMA dadb TO avaplus;
+ALTER DEFAULT PRIVILEGES FOR ROLE avaplus IN SCHEMA dadb GRANT SELECT, USAGE, UPDATE ON SEQUENCES TO avaplus;
+ALTER DEFAULT PRIVILEGES FOR ROLE postgres IN SCHEMA dadb GRANT SELECT, DELETE, TRIGGER, TRUNCATE, REFERENCES, UPDATE, INSERT ON TABLES TO avaplus;
+ALTER DEFAULT PRIVILEGES FOR ROLE postgres IN SCHEMA dadb GRANT SELECT, USAGE, UPDATE ON SEQUENCES TO avaplus;
+ALTER DEFAULT PRIVILEGES FOR ROLE postgres IN SCHEMA dadb GRANT EXECUTE ON FUNCTIONS TO avaplus;
